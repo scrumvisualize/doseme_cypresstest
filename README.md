@@ -33,7 +33,7 @@ C:\doseme\node_modules\.bin
 
 4)
 The baseUrl is configured in the cypress.json file and also available in the root folder
-"baseUrl": "https://vancomycin-dosing-calculator.doseme.com.au/#/"
+"baseUrl": "urlgoeshere"
 
 Command to run the test file: 
 
