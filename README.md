@@ -6,22 +6,19 @@
 3) Enter Patient Data in Step-1 
 4) Enter Previous Dose details in Step-2, click on the Calculate button and check the Patient Summary and handled the 'I agree and don't show this again' dialog
 
-##Regarding the spec/ test file and other test configuration:
+##**Regarding the spec/ test file and other test configuration:**
 
-1) 
-The doseme-spec.js test spec is available in the following path:
+1) The doseme-spec.js test spec is available in the following path:
 
    \cypress\integration\examples
 
-2) 
-I have written below functions in 'commands.js' file so it gives the flexibility of reusing at any / number of time
+2) I have written below functions in 'commands.js' file so it gives the flexibility of reusing at any / number of time
    \cypress\support\
   cy.resetPage(), 
   cy.patientdata(t_weight, t_height, t_age, t_serum);
   cy.previousdose(t_pdose, t_infusion, t_noofdose);
 
-3)
-I have defined all the parameters for the page in Cypress.env.json file, its available in the root folder
+3)I have defined all the parameters for the page in Cypress.env.json file, its available in the root folder
 C:\doseme\node_modules\.bin 
 {
 "test_weight": "85",
@@ -33,8 +30,7 @@ C:\doseme\node_modules\.bin
 "test_numberofdoses": "3"
 }
 
-4)
-The baseUrl is configured in the cypress.json file and also available in the root folder
+4)The baseUrl is configured in the cypress.json file and also available in the root folder
 "baseUrl": "url-goes-here"
 
 ##**Command to run the test file:**
